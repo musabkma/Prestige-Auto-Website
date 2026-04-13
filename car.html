@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vehicle Details | Musab Dealership</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="index.html" class="logo">
+          <span class="logo__mark" aria-hidden="true">
+            <img
+              class="logo__img"
+              src="Material/LOgo.png"
+              alt=""
+              width="36"
+              height="36"
+              loading="eager"
+              decoding="async"
+            />
+          </span>
+          Musab Dealership
+        </a>
+        <button
+          type="button"
+          class="nav-toggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav" aria-label="Main">
+          <a href="index.html#featured">Inventory</a>
+          <a href="index.html#why">Why Us</a>
+          <a href="index.html#brands">Brands</a>
+          <a href="index.html">Home</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-car container" data-car-detail>
+      <div class="car-detail__topbar reveal">
+        <!-- <div class="user-chip">
+          <div class="user-chip__avatar" aria-hidden="true">
+            <img
+              class="user-chip__avatar-img"
+              src="Material/profile.PNG"
+              alt=""
+              width="38"
+              height="38"
+              decoding="async"
+            />
+          </div>
+          <div class="user-chip__info">
+            <span class="user-chip__name">Alex Morgan</span>
+          </div> -->
+        </div>
+      </div>
+
+      <div class="car-detail__main">
+        <div class="car-detail__image-col reveal">
+          <div class="car-detail__image-bg" aria-hidden="true"></div>
+          <div class="car-detail__image-wrap">
+            <img
+              class="car-detail__image"
+              data-field="image"
+              src="Material/huyindai/img1.jpg"
+              alt="Featured vehicle"
+              width="1200"
+              height="750"
+            />
+          </div>
+        </div>
+
+        <aside class="car-detail__panel reveal">
+          <div class="car-detail__panel-head">
+            <div>
+              <h1 class="car-detail__title" data-field="name">
+                Hyundai IONIQ 6
+              </h1>
+              <p class="car-detail__price">
+                <span data-field="price">247,999</span> SAR
+                <span> MSRP</span>
+              </p>
+            </div>
+            <span class="tier tier-a" data-field="tier" title="Rating tier"
+              >A</span
+            >
+          </div>
+
+          <div class="stat-group">
+            <div>
+              <div class="stat-row">
+                <span class="stat-row__label">Top speed</span>
+                <span class="stat-row__value" data-field="topSpeed"
+                  >185 km/h</span
+                >
+              </div>
+            </div>
+            <div>
+              <div class="stat-row">
+                <span class="stat-row__label">0–100 km/h</span>
+                <span class="stat-row__value" data-field="accel">5.1 s</span>
+              </div>
+            </div>
+            <div>
+              <div class="stat-row">
+                <span class="stat-row__label">Handling</span>
+                <span class="stat-row__value" aria-hidden="true"></span>
+              </div>
+              <div class="stat-bar">
+                <div class="stat-bar__track">
+                  <div class="stat-bar__fill" data-bar="handling"></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="stat-row">
+                <span class="stat-row__label">Grip</span>
+                <span class="stat-row__value" aria-hidden="true"></span>
+              </div>
+              <div class="stat-bar">
+                <div class="stat-bar__track">
+                  <div class="stat-bar__fill" data-bar="grip"></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="stat-row">
+                <span class="stat-row__label">Traction</span>
+                <span class="stat-row__value" data-field="traction">RWD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="car-detail__actions">
+            <a href="#more" class="btn btn-primary">Schedule test drive</a>
+            <a href="index.html#footer-contact" class="btn btn-ghost"
+              >Request quote</a
+            >
+          </div>
+        </aside>
+      </div>
+
+      <section id="more" class="section section--carousel">
+        <div class="section__head reveal">
+          <div>
+            <h2>More in stock</h2>
+            <p>Swipe or scroll to explore similar vehicles.</p>
+          </div>
+          <a href="index.html#featured" class="link-arrow">Full inventory →</a>
+        </div>
+        <div
+          class="scroll-row scroll-row--compact reveal"
+          aria-label="Related vehicles"
+        >
+          <article class="car-card">
+            <a href="car.html?id=1" data-car-link data-car-id="1">
+              <img
+                class="car-card__img"
+                src="Material/huyindai/img1.jpg"
+                alt=""
+                width="600"
+                height="338"
+              />
+            </a>
+            <div class="car-card__body">
+              <div class="car-card__top">
+                <h3 class="car-card__name">Hyundai IONIQ 6</h3>
+                <span class="tier tier-a">A</span>
+              </div>
+              <p class="car-card__price">247,999 SAR</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <a href="car.html?id=2" data-car-link data-car-id="2">
+              <img
+                class="car-card__img"
+                src="Material/BMW/whitebmw.png"
+                alt=""
+                width="600"
+                height="338"
+              />
+            </a>
+            <div class="car-card__body">
+              <div class="car-card__top">
+                <h3 class="car-card__name">BMW i4 M50</h3>
+                <span class="tier tier-s">S</span>
+              </div>
+              <p class="car-card__price">287,500 SAR</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <a href="car.html?id=3" data-car-link data-car-id="3">
+              <img
+                class="car-card__img"
+                src="Material/benz/benz.png"
+                alt=""
+                width="600"
+                height="338"
+              />
+            </a>
+            <div class="car-card__body">
+              <div class="car-card__top">
+                <h3 class="car-card__name">Mercedes-Benz EQE</h3>
+                <span class="tier tier-a">A</span>
+              </div>
+              <p class="car-card__price">411,000 SAR</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <a href="car.html?id=4" data-car-link data-car-id="4">
+              <img
+                class="car-card__img"
+                src="Material/rollsRoyce/phantom.png"
+                alt=""
+                width="600"
+                height="338"
+              />
+            </a>
+            <div class="car-card__body">
+              <div class="car-card__top">
+                <h3 class="car-card__name">Rolls Royce Phantom VIII</h3>
+                <span class="tier tier-s">S</span>
+              </div>
+              <p class="car-card__price">1,950,000 SAR</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <a href="car.html?id=5" data-car-link data-car-id="5">
+              <img
+                class="car-card__img"
+                src="Material/Audi/e-tron.png"
+                alt=""
+                width="600"
+                height="338"
+              />
+            </a>
+            <div class="car-card__body">
+              <div class="car-card__top">
+                <h3 class="car-card__name">Audi e-tron GT</h3>
+                <span class="tier tier-s">S</span>
+              </div>
+              <p class="car-card__price">445,000 SAR</p>
+            </div>
+          </article>
+          <article class="car-card">
+            <a href="car.html?id=6" data-car-link data-car-id="6">
+              <img
+                class="car-card__img"
+                src="Material/Tesla/model_x_plaid.png"
+                alt=""
+                width="600"
+                height="338"
+              />
+            </a>
+            <div class="car-card__body">
+              <div class="car-card__top">
+                <h3 class="car-card__name">Tesla Model X Plaid</h3>
+                <span class="tier tier-s">S</span>
+              </div>
+              <p class="car-card__price">487,900 SAR</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer site-footer--minimal">
+      <div class="container">
+        <p class="site-footer__bottom">
+          <a href="index.html">← Back to home</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+  </body>
+</html>
