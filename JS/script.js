@@ -74,7 +74,7 @@
       tier: "A",
       tierClass: "tier-a",
       image:
-        "Material/benz/benz.png",
+        "Material/benz/Benz.png",
       topSpeed: "210 km/h",
       accel: "4.7 s",
       handling: 80,
